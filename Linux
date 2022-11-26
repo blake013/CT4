@@ -1,0 +1,30 @@
+
+Enable Firewall 
+
+sudo ufw reset -y 
+
+sudo ufw enable 
+
+sudo ufw deny 21 
+
+sudo ufw deny 22 
+
+sudo ufw deny 23 
+
+sudo ufw deny 53 
+
+sudo ufw deny 80 
+
+sudo ufw deny 8080 
+
+sudo ufw deny 443 
+
+sudo ufw deny 445 
+
+sudo ufw deny 8443 
+
+sudo ufw deny 3389 
+
+sudo ufw deny 5900 
+
+sudo ufw deny 5800 
