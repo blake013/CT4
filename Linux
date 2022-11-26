@@ -1,4 +1,4 @@
-Enable Firewall 
+sudo apt install ufw
 sudo ufw reset -y 
 sudo ufw enable 
 sudo ufw deny 21 
