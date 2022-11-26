@@ -1,6 +1,6 @@
 
 reg add HKLM\System\CurrentControlSet\Services\NetBT\Parameters /V SmbDeviceEnabled /T REG_DWORD /F /D 0 
-Reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /f /v fDenyTSConnections /t REG_DWORD /d 1 
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /f /v fDenyTSConnections /t REG_DWORD /d 1 
 sc stop lanmanserver 
 sc config lanmanserver start= disabled 
 shutdown -r -t 0 -f 
