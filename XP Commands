@@ -9,3 +9,10 @@ shutdown -r -t 0 -f
 ## Enable firewall - may work - may require SP2
 
 netsh firewall set opmode enable
+
+
+### download for SP3
+
+XP SP3 Link
+https://www.majorgeeks.com/files/details/microsoft_windows_xp_service_pack_3.html
+
