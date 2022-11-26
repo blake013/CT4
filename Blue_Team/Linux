@@ -1,0 +1,21 @@
+sudo apt install ufw
+sudo ufw reset -y
+sudo ufw enable
+sudo ufw deny 21
+sudo ufw deny 22
+sudo ufw deny 23
+sudo ufw deny 53
+sudo ufw deny 80
+sudo ufw deny 8080
+sudo ufw deny 443
+sudo ufw deny 445
+sudo ufw deny 8443
+sudo ufw deny 3389
+sudo ufw deny 5900
+sudo ufw deny 5800
+sudo useradd Group2
+sudo usermod -aG sudo Group2
+sudo chsh -s /bin/bash Group2
+sudo passwd Group2
+sudo shutdown -r now
+
