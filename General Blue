@@ -1,15 +1,4 @@
-
-##Disable SMBv1 Windows XP 
-
-reg add HKLM\System\CurrentControlSet\Services\NetBT\Parameters /V SmbDeviceEnabled /T REG_DWORD /F /D 0 
-
-sc stop lanmanserver 
-
-sc config lanmanserver start= disabled 
-
-shutdown -r -t 0 -f 
-
-
+##General Things to Disable
 
 Disable incoming connections 
 
@@ -18,3 +7,4 @@ netsh advfirewall set domainprofile firewallpolicy blockinbound,allowoutbound
 Disable Remote Desktop
 
 Reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /f /v fDenyTSConnections /t REG_DWORD /d 1 
+
